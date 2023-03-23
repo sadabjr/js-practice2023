@@ -11,8 +11,32 @@
 
 
     <script>
-        async function abcd(){
-            console.log("================================")
+        // async function abcd(){
+        //     console.log("================================")
+        // }
+
+        // async function abcd() {
+        //     return 7;
+        // }
+
+        async function uitility(){
+            let delhiMausam = new Promise(function(resolve, reject){
+                setTimeout(() => {
+                    console.log("Delhi Mausam is very hot")
+                }, 1000)
+            })
+
+            let hydMausam = new Promise(function(resolve, reject){
+                setTimeout(() =>{
+                    console.log('hyd is cool')
+                }, 5000)
+            })
+
+            let DM = delhiMausam();
+            let HM = hydMausam();
+
+            return [DM, HM];
+
         }
     </script>
 </body>
