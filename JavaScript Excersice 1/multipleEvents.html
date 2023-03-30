@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        let myDiv = document.createElement('div');
+
+        for(let i = 0; i<=100; i++){
+            let newElement = document.createElement('p');
+            newElement.textContent = 'this is para' + i;
+
+            newElement.addEventListener('click', function(event){
+                // console.log('I have clicked on para '+ i);
+
+                console.log(event.target.textContent);
+            });
+            myDiv.appendChild(newElement);
+        }
+        document.body.appendChild(myDiv);
+
+        myDiv.style.display = 'inline-block';
+        
+    </script>
+</body>
+</html>
