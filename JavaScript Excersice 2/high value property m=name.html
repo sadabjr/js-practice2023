@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function findMaxByProperty(arr, prop) {
+        if (arr.length === 0) {
+          return null;
+        }
+
+        let maxObj = arr[0];
+
+        for (let i = 1; i < arr.length; i++) {
+          if (arr[i][prop] > maxObj[prop]) {
+            maxObj = arr[i];
+          }
+        }
+        return maxObj;
+      }
+
+      // Test case 1
+      const arr1 = [
+        { name: "apple", price: 1 },
+        { name: "banana", price: 2 },
+        { name: "orange", price: 3 },
+      ];
+
+      const maxObj1 = findMaxByProperty(arr1, "price");
+      console.log(maxObj1);
+
+      const arr2 = [
+        { name: "Pranay", age: 20 },
+        { name: "Nidhi", age: 21 },
+        { name: "Soumya", age: 21 },
+      ];
+
+      const maxObj2 = findMaxByProperty(arr2, "age");
+      console.log(maxObj2);
+
+      const arr3=[];
+      const maxObj3 = findMaxByProperty(arr3, "price");
+      console.log(maxObj3);
+    </script>
+  </body>
+</html>
