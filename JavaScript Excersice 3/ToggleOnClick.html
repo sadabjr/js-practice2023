@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="toggleDiv()">Toggle</button>
+    <div id="divId" class="myDiv" style="display: none;">This is the content of the div</div>
+
+    <script>
+        const toggleDiv = () => {
+            const div = document.getElementById('divId');
+            if(div.style.display == 'none'){
+                div.style.display = 'block';
+            }else{
+                div.style.display = 'none';
+            }
+        }
+    </script>
+  </body>
+</html>
