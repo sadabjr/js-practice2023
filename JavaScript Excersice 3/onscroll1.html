@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+          border: 1px solid black;
+          width: 200px;
+          height: 100px;
+          overflow: scroll;
+        }
+        .myStyle{
+            color: red;
+            background: yellow;
+        }
+        </style>
+</head>
+<body>
+    <div id="para" class="myStyle" onscroll="myFunction()">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi expedita qui consequatur, cupiditate recusandae quis ullam? Tempore maiores excepturi dignissimos dolor nesciunt repudiandae, tempora est. Facilis adipisci fugit, voluptate corrupti nam aliquid eius vero eligendi mollitia omnis distinctio iste sunt molestias quae quisquam dignissimos quo ad quis doloribus sapiente laudantium obcaecati! Tempore eveniet blanditiis beatae consectetur! Nulla debitis suscipit vel repellat aperiam, deleniti earum aut officia facere perspiciatis, nihil alias repudiandae omnis consequuntur! Facere aut repellat autem modi quis labore, ipsam dignissimos, expedita in, libero voluptates maiores dolor. Non asperiores a ut perferendis neque nesciunt perspiciatis tempora error dolore quod!
+    </div>
+    <p>scroll <span id="demo">0</span></p>\
+
+    <script>
+        
+        function myFunction() {
+            let para = document.getElementById("para");
+            para.classList.remove('myStyle')
+        }
+    </script>
+</body>
+</html>
